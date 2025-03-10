@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(
-  express.static(path.join(__dirname,"public", "dist"), {
+  express.static(path.join(__dirname,"public"), {
     setHeaders: (res, filePath) => {
       if (filePath.endsWith(".js")) {
         res.setHeader("Content-Type", "application/javascript");
