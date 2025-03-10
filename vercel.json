@@ -13,10 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/public/dist/index.html"
+      "dest": "/dist/index.html"
     }
-  ],
-  "static": {
-    "directory": "public"
-  }
+  ]
 }
