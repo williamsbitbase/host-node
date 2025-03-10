@@ -15,8 +15,5 @@
       "src": "/(.*)",
       "dest": "/public/dist/index.html"
     }
-  ],
-  "static": {
-    "directory": "public/dist"
-  }
+  ]
 }

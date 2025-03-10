@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Serve static files from 'public'
+// Serve static files correctly from 'public/dist'
 app.use(express.static(path.join(__dirname, "public", "dist")));
 
 app.get("*", (req, res) => {
@@ -18,5 +18,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`App listening on port : ${PORT}`);
+  console.log(`App listening on port: ${PORT}`);
 });
